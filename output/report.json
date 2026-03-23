@@ -1,0 +1,11 @@
+{
+    "total_rows": 7,
+    "average_age": 33.2,
+    "average_salary": 57673.47,
+    "departments": {
+        "Engineering": 3,
+        "Marketing": 2,
+        "HR": 1,
+        "Finance": 1
+    }
+}
