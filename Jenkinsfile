@@ -16,13 +16,13 @@ pipeline {
 
         stage('Dockerize') {
             steps {
-                sh 'docker build -t data-pipeline .'
+                sh '/usr/local/bin/docker build -t data-pipeline .'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'docker run data-pipeline'
+                sh '/usr/local/bin/docker run data-pipeline'
             }
         }
     }
