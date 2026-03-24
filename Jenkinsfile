@@ -22,7 +22,7 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh '/usr/local/bin/docker run data-pipeline'
+                sh '/usr/local/bin/docker run -v /Users/sharathkottam/.jenkins/workspace/data-pipeline/output:/app/output data-pipeline'
             }
         }
     }
