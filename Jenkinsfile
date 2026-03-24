@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'pip install -r requirements.txt'
+                sh '/Users/sharathkottam/anaconda3/bin/pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'pytest tests/test_pipeline.py -v'
+                sh '/Users/sharathkottam/anaconda3/bin/pytest tests/test_pipeline.py -v'
             }
         }
 
